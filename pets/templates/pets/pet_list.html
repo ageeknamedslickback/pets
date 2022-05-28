@@ -1,0 +1,9 @@
+{% block content %}
+    <h2>Pets</h2>
+    <ul>
+        {% for pet in object_list %}
+            <li>{{ pet }}</li>
+        {% endfor %}
+    </ul>
+    <a href={% url 'create' %}>Add Pet</a>
+{% endblock %}

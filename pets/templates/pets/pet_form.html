@@ -1,0 +1,5 @@
+<form method="post">{% csrf_token %}
+    <h2>Add your pet</h2>
+    {{ form.as_table }}
+    <input type="submit" value="Save">
+</form>
